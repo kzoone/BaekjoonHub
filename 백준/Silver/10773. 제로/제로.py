@@ -1,9 +1,10 @@
-n = int(input())
-z = []
-for i in range(n):
-    num = int(input())
-    if num == 0:
-        z.pop()
+k = int(input())
+ 
+li = []
+for _ in range(k):
+    n = int(input())
+    if n==0:
+        li.pop()
     else:
-        z.append(num)
-print(sum(z))
+        li.append(n)
+print(sum(li))
