@@ -1,12 +1,10 @@
-# 입력
-A, B = map(int, input().split())
-res = A*B
+a, b = map(int, input().split())
 
-# 최대공약수 (유클리드 호제법)
-while B:
-    if A > B:
-        A, B = B, A
-    B %= A
+def gcd(a, b):
+    while b:
+        mod = b
+        b = a % b
+        a = mod
+    return a
 
-# 최소공배수
-print(res//A)
+print(a*b//gcd(a, b))
