@@ -1,8 +1,7 @@
-import sys
-N = int(sys.stdin.readline())
-result = 0
-x = 1
-while x*x <= N:
-    x += 1
-    result +=1
-print(result)
+n=int(input())
+r=0
+c=1
+while(c<=n):
+    r+=1
+    c=(r+1)**2
+print(r)
